@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const cards = [
   { title: "Adres", Icon: PinIcon, lines: [site.address, site.district] },
-  { title: "Telefon", Icon: PhoneIcon, lines: [site.phone, site.phoneAlt] },
+  { title: "Telefon", Icon: PhoneIcon, lines: [site.phone] },
   { title: "E-posta", Icon: MailIcon, lines: [site.email] },
   { title: "Çalışma Saatleri", Icon: ClockIcon, lines: [site.hours] },
 ];
@@ -89,10 +89,6 @@ export default function Iletisim() {
                     <div className="text-sm font-semibold text-ink">Telefon</div>
                     <a href={`tel:${site.phoneHref}`} className="text-gray-600 hover:text-gold transition-colors">
                       {site.phone}
-                    </a>
-                    <br />
-                    <a href={`tel:${site.phoneAltHref}`} className="text-gray-600 hover:text-gold transition-colors">
-                      {site.phoneAlt}
                     </a>
                   </div>
                 </div>
